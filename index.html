@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Scroll Indicator</title>
+     <link rel="stylesheet" href="main.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+     <header>
+          <div class="header-proper">
+               <h1 class="logo">ScrollIndicator</h1>
+          </div>
+          <div class="scroll-line"></div>
+     </header>
+
+     <div class="main">
+          <div class="content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates recusandae, illum aliquid sapiente incidunt repellendus hic molestias ipsam corporis eligendi facere error alias, officiis itaque porro perferendis repudiandae qui odio asperiores vitae dolor doloremque. Laboriosam, dicta, quisquam! Debitis nobis tenetur possimus nulla minima, impedit maiores recusandae dolorem fugiat aliquid, quia ut est consequuntur quasi repudiandae eos minus blanditiis magnam!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates recusandae, illum aliquid sapiente incidunt repellendus hic molestias ipsam corporis eligendi facere error alias, officiis itaque porro perferendis repudiandae qui odio asperiores vitae dolor doloremque. Laboriosam, dicta, quisquam! Debitis nobis tenetur possimus nulla minima, impedit maiores recusandae dolorem fugiat aliquid, quia ut est consequuntur quasi repudiandae eos minus blanditiis magnam!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates recusandae, illum aliquid sapiente incidunt repellendus hic molestias ipsam corporis eligendi facere error alias, officiis itaque porro perferendis repudiandae qui odio asperiores vitae dolor doloremque. Laboriosam, dicta, quisquam! Debitis nobis tenetur possimus nulla minima, impedit maiores recusandae dolorem fugiat aliquid, quia ut est consequuntur quasi repudiandae eos minus blanditiis magnam!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates recusandae, illum aliquid sapiente incidunt repellendus hic molestias ipsam corporis eligendi facere error alias, officiis itaque porro perferendis repudiandae qui odio asperiores vitae dolor doloremque. Laboriosam, dicta, quisquam! Debitis nobis tenetur possimus nulla minima, impedit maiores recusandae dolorem fugiat aliquid, quia ut est consequuntur quasi repudiandae eos minus blanditiis magnam!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates recusandae, illum aliquid sapiente incidunt repellendus hic molestias ipsam corporis eligendi facere error alias, officiis itaque porro perferendis repudiandae qui odio asperiores vitae dolor doloremque. Laboriosam, dicta, quisquam! Debitis nobis tenetur possimus nulla minima, impedit maiores recusandae dolorem fugiat aliquid, quia ut est consequuntur quasi repudiandae eos minus blanditiis magnam!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates recusandae, illum aliquid sapiente incidunt repellendus hic molestias ipsam corporis eligendi facere error alias, officiis itaque porro perferendis repudiandae qui odio asperiores vitae dolor doloremque. Laboriosam, dicta, quisquam! Debitis nobis tenetur possimus nulla minima, impedit maiores recusandae dolorem fugiat aliquid, quia ut est consequuntur quasi repudiandae eos minus blanditiis magnam!</p>
+          </div>
+     </div>
+
+     <script type="text/javascript">
+
+     $(window).scroll(function() {
+     var wintop = $(window).scrollTop(), docheight =
+
+     $(document).height(), winheight = $(window).height();
+     var scrolled = (wintop/(docheight-winheight))*100;
+
+     $('.scroll-line').css('width', (scrolled + '%'));
+});
+
+     </script>
+
+</body>
+</html>
